@@ -9,7 +9,11 @@ import asyncio
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # ВАЖНО: Вставьте сюда токен вашего бота
-API_TOKEN = '7863992557:AAH1Dz6Iy4foxSWseCOP29IR4wpq9y0OhQs'
+# API_TOKEN = '7863992557:AAH1Dz6Iy4foxSWseCOP29IR4wpq9y0OhQs'
+
+TOKEN = "7863992557:AAH1Dz6Iy4foxSWseCOP29IR4wpq9y0OhQs"  # Убедись, что токен правильный!
+bot = Bot(token=TOKEN)
+dp = Dispatcher()
 
 # ВАЖНО: Вставьте сюда пароль старшины (односторонний вход для доступа к функционалу)
 STARSHINA_PASSWORD = 'starshina'
