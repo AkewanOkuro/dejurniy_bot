@@ -9,10 +9,10 @@ import asyncio
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # ВАЖНО: Вставьте сюда токен вашего бота
-API_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+API_TOKEN = '7863992557:AAH1Dz6Iy4foxSWseCOP29IR4wpq9y0OhQs'
 
 # ВАЖНО: Вставьте сюда пароль старшины (односторонний вход для доступа к функционалу)
-STARSHINA_PASSWORD = 'ВАШ_ПАРОЛЬ'
+STARSHINA_PASSWORD = 'starshina'
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
