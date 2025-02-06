@@ -2,7 +2,10 @@ import asyncio
 import logging
 import sqlite3
 from datetime import datetime, timedelta
-from aiogram import Bot, Dispatcher, types, executor
+from aiogram import Bot, Dispatcher, types
+from aiogram.types import Message
+from aiogram.filters import Command
+import asyncio
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # ВАЖНО: Вставьте сюда токен вашего бота
