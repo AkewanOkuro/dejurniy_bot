@@ -688,5 +688,8 @@ async def cmd_info(message: types.Message):
     await message.answer(info_text)
 
 # --- Запуск бота --- #
-if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+async def main():
+    await dp.start_polling(bot)
+
+if __name__ == "__main__":
+    asyncio.run(main())
