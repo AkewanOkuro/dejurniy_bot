@@ -13,7 +13,7 @@ def get_main_keyboard(is_starshina: bool):
 def get_back_keyboard():
     return ReplyKeyboardMarkup(resize_keyboard=True).add(KeyboardButton("Назад"))
 
-def generate_week_buttons(year: int, week: int):
+def get_calendar_keyborad(year: int, week: int):
     kb = InlineKeyboardMarkup(row_width=7)
     start_date = datetime.fromisocalendar(year, week, 1)
     for day in range(7):
