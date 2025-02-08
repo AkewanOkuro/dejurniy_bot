@@ -1,6 +1,8 @@
 import sqlite3
 from datetime import datetime, timedelta
 
+__all__ = ['init_db', 'UserCRUD', 'AssignmentCRUD', 'SwapCRUD']
+
 class BaseCRUD:
     def __init__(self):
         self.conn = sqlite3.connect('bot.db', check_same_thread=False)
@@ -103,3 +105,7 @@ class SwapCRUD(BaseCRUD):
             WHERE id = ?
         ''', (status, proposal_id))
         self.conn.commit()
+
+def init_db():
+    """Инициализация базы данных при запуске"""
+    BaseCRUD()  # Просто создаём экземпляр базового класса для создания таблиц
