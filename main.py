@@ -29,7 +29,8 @@ init_db()
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
     """Обработчик команды /start"""
-    user = UserCRUD.get(message.from_user.id)
+    user_crud = UserCRUD()  # Создаём экземпляр
+    user = user_crud.get(message.from_user.id)  #  Вызываем метод у экземпляра
     
     if user:
         kb = get_main_keyboard(user.is_starshina)
